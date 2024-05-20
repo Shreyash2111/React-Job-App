@@ -16,32 +16,41 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const addJob = async (newJob) => {
     console.log(newJob);
-    const res = await fetch(`http://localhost:3000/jobs`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+    const res = await fetch(
+      `https://json-server-react-job-app.onrender.com/jobs`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
 
-      body: JSON.stringify(newJob),
-    });
+        body: JSON.stringify(newJob),
+      }
+    );
     return;
   };
   const updateJob = async (newJob) => {
     console.log(newJob);
-    const res = await fetch(`http://localhost:3000/jobs/${newJob.id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
+    const res = await fetch(
+      `https://json-server-react-job-app.onrender.com/jobs/${newJob.id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
 
-      body: JSON.stringify(newJob),
-    });
+        body: JSON.stringify(newJob),
+      }
+    );
     return;
   };
   const deleteJob = async (jobid) => {
-    const res = await fetch(`http://localhost:3000/jobs/${jobid}`, {
-      method: "DELETE",
-    });
+    const res = await fetch(
+      `https://json-server-react-job-app.onrender.com/jobs/${jobid}`,
+      {
+        method: "DELETE",
+      }
+    );
     return;
   };
   const router = createBrowserRouter(
