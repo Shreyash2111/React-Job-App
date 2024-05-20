@@ -1,5 +1,4 @@
-Deployment Link
-Link- https://reactjobsapp.netlify.app/
+Deployment Link- https://reactjobsapp.netlify.app/
 
 Description
 ->This is a React job application with the help of which you can see,post,update and delete jobs.
