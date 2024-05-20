@@ -217,7 +217,7 @@ const Addjobpage = ({ updateJob }) => {
           className="w-full p-2 bg-blue-500 text-xl fot-bold text-white rounded-3xl hover:bg-blue-600"
           type="submit"
         >
-          Edit Job
+          Update Job
         </button>
       </form>
     </div>
