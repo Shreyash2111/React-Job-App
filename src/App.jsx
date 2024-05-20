@@ -16,7 +16,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const addJob = async (newJob) => {
     console.log(newJob);
-    const res = await fetch(`http://localhost:3000/jobs`, {
+    const res = await fetch(`https://json-server-react-job-app.onrender.com/jobs`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +28,7 @@ function App() {
   };
   const updateJob = async (newJob) => {
     console.log(newJob);
-    const res = await fetch(`http://localhost:3000/jobs/${newJob.id}`, {
+    const res = await fetch(`https://json-server-react-job-app.onrender.com/jobs/${newJob.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +39,7 @@ function App() {
     return;
   };
   const deleteJob = async (jobid) => {
-    const res = await fetch(`http://localhost:3000/jobs/${jobid}`, {
+    const res = await fetch(`https://json-server-react-job-app.onrender.com/jobs/${jobid}`, {
       method: "DELETE",
     });
     return;
