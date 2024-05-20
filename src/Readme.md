@@ -4,6 +4,7 @@ Link- https://reactjobsapp.netlify.app/
 Description
 ->This is a React job application with the help of which you can see,post,update and delete jobs.
 ->It has different sections for home,jobs and adding jobs.
+->It has a fully responsive design on every devices.
 
 Concepts used
 ->I have used different hooks like usestate,useeffect,useloaderdata,useparams.
