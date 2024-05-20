@@ -6,7 +6,9 @@ const Jobposts = ({ isHome = false }) => {
   useEffect(() => {
     const fetchjobs = async () => {
       try {
-        const apiurl = isHome ? "/api/jobs?_limit=3" : "/api/jobs";
+        const apiurl = isHome
+          ? "https://json-server-react-job-app.onrender.com/jobs?_limit=3"
+          : "https://json-server-react-job-app.onrender.com/jobs";
         const res = await fetch(apiurl);
         const data = await res.json();
         setJob(data);

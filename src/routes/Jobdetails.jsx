@@ -82,7 +82,9 @@ const Jobdetails = ({ deleteJob }) => {
   );
 };
 const jobLoader = async ({ params }) => {
-  const res = await fetch(`/api/jobs/${params.id}`);
+  const res = await fetch(
+    `https://json-server-react-job-app.onrender.com/jobs/${params.id}`
+  );
   const data = res.json();
 
   console.log(data);
